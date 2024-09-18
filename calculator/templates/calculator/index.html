@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <style>
+        ::placeholder {
+        text-align: center;
+        }
+    </style>
     <meta charset="UTF-8">
     <title>Рецепты</title>
 </head>
@@ -11,5 +16,9 @@
     {% empty %}
         <p>Такого рецепта не знаю :(</p>
     {% endfor %}
+    <form>
+        <input type="text" placeholder="количество порций" name="servings" size="15">
+    </form>
+
 </body>
 </html>
